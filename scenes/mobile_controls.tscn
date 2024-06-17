@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://cux7xqwyr7vnj" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_4migg"]
 
 [node name="MobileControls" type="CanvasLayer"]
+follow_viewport_scale = 0.001
 
 [node name="Jump" type="TouchScreenButton" parent="."]
 modulate = Color(1, 1, 1, 0.478431)

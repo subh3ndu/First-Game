@@ -23,6 +23,10 @@ buses/default_bus_layout=""
 
 Music="*res://scenes/music.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 jump={
