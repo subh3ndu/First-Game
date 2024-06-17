@@ -1,6 +1,5 @@
 [gd_scene load_steps=17 format=3 uid="uid://skwy7y8t0o0"]
 
-[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_l1bic"]
 [ext_resource type="PackedScene" uid="uid://ffspvg3quvum" path="res://scenes/player.tscn" id="1_n3qjw"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_wqtjs"]
 [ext_resource type="Texture2D" uid="uid://ctekj5b6ahruv" path="res://assets/sprites/world_tileset.png" id="2_kdju2"]
@@ -10,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://yhjxmf6aolet" path="res://scenes/slime.tscn" id="6_1qwg5"]
 [ext_resource type="FontFile" uid="uid://dsh1elvv17hwk" path="res://assets/fonts/PixelOperator8.ttf" id="7_5xem5"]
 [ext_resource type="FontFile" uid="uid://cux7xqwyr7vnj" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_0x8qq"]
+[ext_resource type="PackedScene" uid="uid://d1rf7xgw7ukbu" path="res://scenes/mobile_controls.tscn" id="10_g4ggh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4i6l"]
 texture = ExtResource("2_kdju2")
@@ -461,17 +461,7 @@ _data = {
 unique_name_in_owner = true
 script = ExtResource("1_wqtjs")
 
-[node name="ScoredLabel" type="Label" parent="GameManager"]
-offset_left = 509.0
-offset_top = -153.0
-offset_right = 605.0
-offset_bottom = -123.0
-theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("8_0x8qq")
-theme_override_font_sizes/font_size = 8
-text = "You collected x coins."
-horizontal_alignment = 1
-autowrap_mode = 2
+[node name="MobileControls" parent="GameManager" instance=ExtResource("10_g4ggh")]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_kh5vf")
@@ -490,14 +480,6 @@ zoom = Vector2(4, 4)
 limit_bottom = 125
 limit_smoothed = true
 position_smoothing_enabled = true
-
-[node name="Virtual Joystick" parent="Player" instance=ExtResource("1_l1bic")]
-z_index = 1
-offset_left = -140.0
-offset_top = -4.00001
-offset_right = 160.0
-offset_bottom = 296.0
-scale = Vector2(0.302628, 0.276311)
 
 [node name="Coins" type="Node" parent="."]
 
@@ -586,13 +568,13 @@ theme_override_font_sizes/font_size = 8
 text = "Almost there..."
 
 [node name="Label4" type="Label" parent="Labels"]
-offset_left = 518.0
-offset_top = -173.0
-offset_right = 597.0
-offset_bottom = -162.0
+offset_left = 517.0
+offset_top = -143.0
+offset_right = 693.0
+offset_bottom = -127.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("7_5xem5")
-theme_override_font_sizes/font_size = 8
+theme_override_fonts/font = ExtResource("8_0x8qq")
+theme_override_font_sizes/font_size = 10
 text = "You made it !"
 
 [node name="Killzone" parent="." instance=ExtResource("5_k62qk")]

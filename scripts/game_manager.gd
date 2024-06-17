@@ -2,10 +2,8 @@ extends Node
 
 var score = 0
 
-@onready var scored_label = $ScoredLabel
+@onready var mobile_controls = $MobileControls
 
 func add_point():
 	score += 1
-	scored_label.text = "You collected " + str(score) + " coins."
-	
-
+	mobile_controls.get_node("ScoreText").text = "Score: " + str(score)
