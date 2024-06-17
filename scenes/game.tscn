@@ -461,6 +461,8 @@ _data = {
 unique_name_in_owner = true
 script = ExtResource("1_wqtjs")
 
+[node name="MobileControls" parent="GameManager" instance=ExtResource("10_g4ggh")]
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_kh5vf")
 format = 2
@@ -580,5 +582,3 @@ position = Vector2(52, 153)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_ymmib")
-
-[node name="MobileControls" parent="." instance=ExtResource("10_g4ggh")]
