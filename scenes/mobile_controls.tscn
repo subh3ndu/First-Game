@@ -14,7 +14,7 @@ offset_top = -433.0
 offset_right = 942.0
 grow_vertical = 0
 
-[node name="Left" type="TouchScreenButton" parent="HBoxContainer"]
+[node name="Right" type="TouchScreenButton" parent="HBoxContainer"]
 modulate = Color(1, 1, 1, 0.478431)
 position = Vector2(848, 376)
 rotation = -3.14159
@@ -23,13 +23,13 @@ texture_normal = ExtResource("1_c76so")
 passby_press = true
 action = "move_right"
 
-[node name="Right" type="TouchScreenButton" parent="HBoxContainer"]
+[node name="Left" type="TouchScreenButton" parent="HBoxContainer"]
 modulate = Color(1, 1, 1, 0.478431)
 position = Vector2(60, 32)
 scale = Vector2(10.735, 10.735)
 texture_normal = ExtResource("1_c76so")
 passby_press = true
-action = "move_right"
+action = "move_left"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 anchors_preset = 3
@@ -49,7 +49,7 @@ rotation = 1.5708
 scale = Vector2(10.735, 10.735)
 texture_normal = ExtResource("1_c76so")
 passby_press = true
-action = "move_right"
+action = "jump"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="."]
 offset_left = 68.0
