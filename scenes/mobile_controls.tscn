@@ -8,7 +8,7 @@ follow_viewport_scale = 0.001
 
 [node name="Jump" type="TouchScreenButton" parent="."]
 modulate = Color(1, 1, 1, 0.478431)
-position = Vector2(1114, 449)
+position = Vector2(1109, 443)
 rotation = 1.5708
 scale = Vector2(4.81444, 4.81444)
 texture_normal = ExtResource("1_c76so")
@@ -33,10 +33,10 @@ passby_press = true
 action = "move_left"
 
 [node name="ScoreText" type="Label" parent="."]
-offset_left = 19.0
-offset_top = 30.0
-offset_right = 207.0
-offset_bottom = 95.0
+offset_left = 43.0
+offset_top = 23.0
+offset_right = 275.0
+offset_bottom = 88.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("2_4migg")
 theme_override_font_sizes/font_size = 32
