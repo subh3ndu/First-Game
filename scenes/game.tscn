@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://skwy7y8t0o0"]
+[gd_scene load_steps=17 format=3 uid="uid://skwy7y8t0o0"]
 
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_l1bic"]
 [ext_resource type="PackedScene" uid="uid://ffspvg3quvum" path="res://scenes/player.tscn" id="1_n3qjw"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_wqtjs"]
 [ext_resource type="Texture2D" uid="uid://ctekj5b6ahruv" path="res://assets/sprites/world_tileset.png" id="2_kdju2"]
@@ -489,6 +490,14 @@ zoom = Vector2(4, 4)
 limit_bottom = 125
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Virtual Joystick" parent="Player" instance=ExtResource("1_l1bic")]
+z_index = 1
+offset_left = -140.0
+offset_top = -4.00001
+offset_right = 160.0
+offset_bottom = 296.0
+scale = Vector2(0.302628, 0.276311)
 
 [node name="Coins" type="Node" parent="."]
 
