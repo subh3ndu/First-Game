@@ -26,6 +26,9 @@ MultiplayerManager="*res://scripts/multiplayer/multiplayer_manager.gd"
 
 [display]
 
+window/size/viewport_width=624
+window/size/viewport_height=512
+window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
